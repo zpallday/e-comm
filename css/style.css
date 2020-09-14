@@ -322,7 +322,7 @@ img {
 
 .offer__data{
     padding: 3.5rem .25rem;
-    background: rgba(0,0,0 .5);
+    background: black;
     color: var(--white-color);
 }
 
@@ -336,4 +336,32 @@ img {
 .offer__desription {
     margin-bottom: var(--mb-2);
     letter-spacing: .2rem;
+}
+
+.new__container {
+    row-gap: 2rem;
+}
+
+.new__box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: var(--gray-color);
+    overflow: hidden;
+}
+
+.new__box:hover .new__link {
+ bottom: 0;
+}
+
+.new__link {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(229, 89, 71,.2);
+    transition: .3s;
 }
