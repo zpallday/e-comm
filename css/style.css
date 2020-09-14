@@ -346,8 +346,9 @@ img {
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: var(--gray-color);
+    background-color: var(--grey-color);
     overflow: hidden;
+    margin-bottom: 8%;
 }
 
 .new__box:hover .new__link {
@@ -364,4 +365,26 @@ img {
     align-items: center;
     background: rgba(229, 89, 71,.2);
     transition: .3s;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter__description {
+    margin-bottom: var(--mb-2);
+    font-size: var(--small-font-size);
+    color: var(--dark-color-light)
+}
+
+.newsletter__form {
+    display: grid;
+    grid-template-columns:1fr .5fr ;
+}
+
+.newsletter__input {
+    outline: none;
+    border: none;
+    background-color: var(--grey-color);
+    padding: 0 1rem;
 }
